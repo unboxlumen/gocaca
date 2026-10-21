@@ -1,8 +1,12 @@
-# libcaca (Go)
+# gocaca — libcaca for Go
 
-A pure Go colour ASCII-art canvas library, ported from the WTFPL-licensed
-core of libcaca. The package is **stdlib-only**: no cgo and no third-party
-modules. It is Go-native; it does not export a C ABI or `libcaca.so`.
+A pure Go colour ASCII-art canvas library, ported from the **core** of
+libcaca — the WTFPL-licensed `caca/` library sources at
+<https://github.com/cacalabs/libcaca> — and released under the same WTFPL v2.
+The package is **stdlib-only**: no cgo and no third-party modules. It is
+Go-native; it does not export a C ABI or `libcaca.so`.
+
+API documentation (godoc): <https://pkg.go.dev/github.com/unboxlumen/gocaca>
 
 ## Status
 
@@ -29,7 +33,14 @@ is not stated.
 ## Install
 
 ```sh
-go get github.com/unboxlumen/libcaca
+go get github.com/unboxlumen/gocaca
+```
+
+The module is named `gocaca` but its package name is `libcaca`, so the import
+path alone gives you the `libcaca` identifier:
+
+```go
+import "github.com/unboxlumen/gocaca"
 ```
 
 ## Quick start
@@ -40,7 +51,7 @@ package main
 import (
     "log"
 
-    "github.com/unboxlumen/libcaca"
+    "github.com/unboxlumen/gocaca"
 )
 
 func main() {
@@ -110,11 +121,20 @@ go test -race ./...
 go build ./...
 ```
 
-## Licence
+## Licence and upstream
 
-WTFPL v2. See `LICENSE`. Every source file carries the same grant. The Go
-standard library is distributed under its own BSD-style licence; it is not
-part of this module's source.
+gocaca is released under the **WTFPL v2** (Do What The Fuck You Want To
+Public License, Version 2). See `LICENSE`. Every source file carries the
+same grant. The Go standard library is distributed under its own BSD-style
+licence; it is not part of this module's source.
 
-See `PROVENANCE.md` for the ported modules and the deliberately excluded
-GPL/LGPL files.
+gocaca is a Go port of the **core** of libcaca — the `caca/` library
+sources at <https://github.com/cacalabs/libcaca> — and that core is itself
+distributed under the WTFPL v2 (see the upstream `COPYING`). Only that
+WTFPL-licensed core was used as the reference.
+
+Other parts of the upstream tree carry different terms and are **not**
+included: `kernel/multiboot.h` (GPL-2.0-or-later), `src/aafire.c` and
+`examples/demo0.c` (LGPL-2.0-or-later), and the generated font data whose
+source-font licence is unstated. See `PROVENANCE.md` for the exact lists of
+ported and excluded files.

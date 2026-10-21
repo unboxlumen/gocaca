@@ -46,7 +46,13 @@ Out of scope for this MVP:
 
 ## 2. Licence
 
-All files are WTFPL v2. Put this header at the top of every `.go` file:
+gocaca is released under the WTFPL v2. It is a Go port of the **core** of
+libcaca, the `caca/` library sources at
+<https://github.com/cacalabs/libcaca>; that core is itself distributed under
+the WTFPL v2 (upstream `COPYING`). Only that core is used as the reference —
+the GPL/LGPL files and the unlicensed font data elsewhere in the upstream
+tree are out of scope. All files are WTFPL v2. Put this header at the top of
+every `.go` file:
 
 ```go
 // Copyright (c) 2026 The libcaca Go Authors.

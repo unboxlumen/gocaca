@@ -1,8 +1,12 @@
 # Provenance
 
-`github.com/unboxlumen/libcaca` is a Go port of the WTFPL-licensed core of libcaca
-(`https://github.com/cacalabs/libcaca`, reference commit
-`de48e1a0888caabdc6276afdea46e9096d0adb05`).
+gocaca (`github.com/unboxlumen/gocaca`) is released under the WTFPL v2. It is a
+Go port of the **core** of libcaca — the `caca/` library sources at
+`https://github.com/cacalabs/libcaca` (reference commit
+`de48e1a0888caabdc6276afdea46e9096d0adb05`) — and that core is distributed
+under the WTFPL v2, as recorded in the upstream `COPYING` file. Only that
+WTFPL-licensed core was used; the GPL/LGPL files and the unlicensed font data
+elsewhere in the upstream tree are not part of this module.
 
 ## Ported
 

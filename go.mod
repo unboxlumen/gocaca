@@ -1,3 +1,3 @@
-module github.com/unboxlumen/libcaca
+module github.com/unboxlumen/gocaca
 
 go 1.22

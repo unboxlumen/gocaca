@@ -1,3 +1,10 @@
+gocaca (github.com/unboxlumen/gocaca) is released under the WTFPL v2.
+
+It is a Go port of the core of libcaca, the caca/ library sources at
+https://github.com/cacalabs/libcaca. That core is distributed under the
+WTFPL v2 as well; the GPL/LGPL files and the unlicensed font data in the
+rest of the upstream tree are not used (see PROVENANCE.md).
+
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
 

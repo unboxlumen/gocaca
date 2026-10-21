@@ -20,7 +20,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/unboxlumen/libcaca"
+	"github.com/unboxlumen/gocaca"
 )
 
 func main() {

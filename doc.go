@@ -6,7 +6,8 @@
 
 // Package libcaca is a pure Go colour ASCII-art canvas library.
 //
-// The package is a Go port of the WTFPL-licensed core of libcaca. It has no
+// The package is a Go port of the core of libcaca, the WTFPL-licensed
+// `caca/` library sources at https://github.com/cacalabs/libcaca. It has no
 // cgo and no third-party dependencies. See PROVENANCE.md for the exact scope
 // and the files that were deliberately excluded.
 package libcaca
